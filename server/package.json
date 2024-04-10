@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "leadllyhipposerver fullstack project",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "start": "ncc build index.ts && node dist/index.js"
   },
