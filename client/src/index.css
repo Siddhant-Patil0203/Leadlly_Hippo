@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-home {
+  background: white;
+}
+
+.bg-home-text {
+  background: url("https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/slide-text-bg.png")
+    no-repeat 80px center/contain;
+  padding: 50px 0;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #7fb53c;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.line1::after {
+  content: "";
+  background-image: url("//cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/brand-after.png");
+  position: absolute;
+  width: 185px;
+  height: 140px;
+  background-size: 100% 100%;
+  margin-top: 92px;
+  margin-left: 155px;
+}
+
+.threeLines::before {
+  content: "";
+  background-image: url("//cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/heading-before.png");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: 100% 100%;
+  margin-top: -12px;
+  margin-left: -20px;
+}
+
+@media (min-width: 1024px) {
+  .bg-home {
+    background: url("https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/sliders-bg.png")
+      no-repeat calc(100%) top/auto 100%;
+  }
+
+  .threeLines::before {
+    content: "";
+    background-image: url("//cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/heading-before.png");
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-size: 100% 100%;
+    margin-top: -17px;
+    margin-left: -32px;
+  }
+}
