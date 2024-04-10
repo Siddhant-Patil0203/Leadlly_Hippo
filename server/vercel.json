@@ -9,5 +9,5 @@
         }
       }
     ],
-    "routes": [{ "src": "/[^.]+", "dest": "index.ts" }]
+    "routes": [{ "src": "/[^.]+", "dest": "dist/index.ts" }]
 }
