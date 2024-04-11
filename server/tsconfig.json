@@ -1,17 +1,10 @@
 {
-  "compilerOptions": {
+    "compilerOptions": {
+      "target": "es5",
       "module": "commonjs",
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true,
-      "target": "es6",
-      "noImplicitAny": true,
-      "moduleResolution": "node",
+      "outDir": "./dist",
       "sourceMap": true,
-      "outDir": "dist",
-      "baseUrl": ".",
-      "paths": {
-          "*": ["node_modules/*", "types/*"]
-      }
-  },
-  "include": ["./**/*"]
-  }
+      "strict": true,
+      "esModuleInterop": true,
+    }
+}
